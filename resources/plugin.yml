@@ -1,0 +1,12 @@
+#
+# AutoTNT
+# by DeepRobin
+#
+
+name: AutoTNT
+description: "This plugin ignites tnt automatically after place"
+main: de.deeprobin.autotnt.AutoTnt
+version: 2.0.0
+api-version: 1.13
+author: DeepRobin
+website: https://github.com/DeepRobin
