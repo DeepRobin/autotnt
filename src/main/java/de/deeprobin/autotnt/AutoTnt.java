@@ -1,6 +1,7 @@
 package de.deeprobin.autotnt;
 
 import de.deeprobin.autotnt.listener.TntListener;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 

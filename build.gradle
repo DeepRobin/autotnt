@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'de.deeprobin'
+version '2.0.0'
+
+sourceCompatibility = 1.8
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'autotnt',
+                'Implementation-Version': version
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url 'https://repo.bstats.org/content/repositories/releases' }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compileOnly 'org.spigotmc:spigot-api:1.13.2-R0.1-SNAPSHOT' // The Spigot API with no shadowing. Requires the OSS repo.
+    compile group: 'org.bstats', name: 'bstats-bukkit', version: '1.2'
+}
